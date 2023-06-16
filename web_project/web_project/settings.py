@@ -91,7 +91,7 @@ DATABASES = {
 #         'ENGINE': 'django.db.backends.mysql',
 #         'NAME': 'frodo', # RDS에서 입력한 DB명
 #         'USER': 'frodo', # RDS 초기 데이터베이스 계정
-#         'PASSWORD':'frodo', # RDS 계정 비밀번호
+#         'PASSWORD':'frodo1234', # RDS 계정 비밀번호
 #         'HOST':'', # 생성한 RDS 주소
 #         'PORT':'3306', # 데이터베이스 port
 #         'OPTIONS' : {
