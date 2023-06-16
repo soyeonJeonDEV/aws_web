@@ -80,22 +80,24 @@ WSGI_APPLICATION = 'web_project.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#       'NAME': BASE_DIR / 'db.sqlite3',
-#    }
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+DATABASES = {
      'default': {
          'ENGINE': 'django.db.backends.mysql',
-         'NAME': 'frodo', # DB명
-         'USER': 'frodo', # 데이터베이스 계정
-         'PASSWORD':'frodo', # 계정 비밀번호
-         'HOST':'localhost', # 데이테베이스 IP
-         #'HOST':'mysql-svc',
+         'NAME': 'frodo', # RDS에서 입력한 DB명
+         'USER': 'frodo', # RDS 초기 데이터베이스 계정
+         'PASSWORD':'frodo', # RDS 계정 비밀번호
+         'HOST':'', # 생성한 RDS 주소
          'PORT':'3306', # 데이터베이스 port
          'OPTIONS' : {
-             'charset' : 'utf8mb4'           
-         }
-     }
+             'charset' : 'utf8mb4'
+         }     
+	}     
 }
 
 
